@@ -1,4 +1,4 @@
-#  Training puppet-5
+#  Training puppet-6
 
 ## Pre-requisites on your VM on ubuntu
 ### Useful packages  

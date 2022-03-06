@@ -30,7 +30,7 @@ puppetserver ca sign -a
 puppet agent -t
 ```
 
-## Delete all certicates
+## Delete all certificates
 ### On puppet master 
 ```shell
 puppet resource service puppet ensure=stopped
