@@ -1,0 +1,9 @@
+---
+name: project
+modules:
+- puppetlabs/docker
+format: rainbow
+plans:
+- project::myplan
+tasks:
+- project::mytask

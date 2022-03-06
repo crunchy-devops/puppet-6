@@ -1,0 +1,6 @@
+greeting: Hello and welcome to hiera training
+
+motd::content: |
+  Welcome
+
+  This server is managed by sysadmins@example.org

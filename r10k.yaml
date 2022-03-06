@@ -1,0 +1,12 @@
+---
+cachedir: '/var/cache/r10k'
+
+sources:
+  control-repo:
+    remote: 'https://github.com/crunchy-devops/r10k-projet.git'
+    basedir: '/etc/puppetlabs/code/environments'
+    prefix: false
+  ctl:
+    remote: 'https://github.com/crunchy-devops/r10k-projet.git'
+    basedir: '/etc/puppetlabs/code/environments'
+    prefix: true
