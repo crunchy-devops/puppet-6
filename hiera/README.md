@@ -1,10 +1,8 @@
 # Hiera 
 
 ## Config
-copie hiera.yaml et la directory data dans env production 
-puppet lookup --environment production value
-copy variable-test.pp in manifests folder
-puppet apply variable-test.pp
+copie hiera.yaml et la directory data dans  production 
+puppet lookup --environment production greeting
 check 
 
 ## Commands
@@ -15,12 +13,12 @@ puppet lookup greeting --explain
 ```
 ## Example
 ```shell
-puppet apply -e "include motd"
-puppet module install puppetlabs/motd
-puppet apply -e "include motd"
-puppet apply -e "include motd"
+puppet apply -e "include motd"   # check if motd is installed 
+puppet module install puppetlabs/motd  # install motd
+puppet apply -e "include motd"  # first exec 
+puppet apply -e "include motd"  # second exec
 ```
-Fire up your browder and select forge.puppet.com  
+Fire up your browser and select forge.puppet.com  
 Search for motd  
 Check how to use it  
 Find motd init.pp file   

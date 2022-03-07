@@ -40,7 +40,7 @@ sudo apt-get install puppet-bolt
 bolt --version 
 ```
 
-### Install bolt on fedora 32 ( host puppetmaster )
+### Install bolt on fedora 33 ( host puppetmaster )
 ```shell
 sudo rpm -Uvh https://yum.puppet.com/puppet-tools-release-fedora-33.noarch.rpm
 sudo dnf install puppet-bolt
@@ -48,12 +48,12 @@ sudo dnf install puppet-bolt
 
 ### Copy this repo 
 ```shell
-git clone  https://github.com/kubeis/puppet-5.git
+git clone  https://github.com/crunchy-devops/puppet-6.git
 ```
 
 ### Create a bolt project
 ```shell
-cd puppet-5 
+cd puppet-6 
 cd project 
 #bolt project init
 ```
