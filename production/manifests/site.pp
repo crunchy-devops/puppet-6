@@ -1,8 +1,5 @@
-notify { 'Hello world':
-  message => "Hello world",
-}
+$packages = [ 'nginx', 'squid', 'unzip']
 
-package { 'nginx':
+package { $packages :
   ensure => present,
 }
-

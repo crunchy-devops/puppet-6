@@ -5,3 +5,4 @@ file { '/tmp/dansfile':
   line => 'dan is awesone',
   path => '/tmp/dansfile',
 }
+
