@@ -1,5 +1,5 @@
 ---
-
+# minimum viable hiera.yaml file
 version: 5
 
 defaults:

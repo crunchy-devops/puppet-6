@@ -43,6 +43,7 @@ puppet resource service puppet ensure=running
 
 ### clean up regenerate certs on Puppet agents
 ```shell
+
 puppet resource service puppet ensure=stopped 
 puppet config print ssldir --section agent
 rm -Rf /etc/puppetlabs/puppet/ssl

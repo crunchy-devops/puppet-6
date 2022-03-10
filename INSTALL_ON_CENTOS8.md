@@ -6,9 +6,9 @@ curl 'http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os/Packages/centos-
 sudo rpm -i key.rpm 
 sudo dnf --disablerepo '*' --enablerepo=extras swap centos-linux-repos centos-stream-repos
 sudo yum -y update
-sudo rpm -Uvh https://yum.puppet.com/puppet6-release-el-8.noarch.rpm# install puppet repo package
+sudo rpm -Uvh https://yum.puppet.com/puppet6-release-el-8.noarch.rpm # install puppet repo package
 yum list puppet* 
-sudo yum install y puppet
+sudo yum install -y puppet
 ```
 
 ## Install Server and Agent 
