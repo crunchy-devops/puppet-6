@@ -56,5 +56,33 @@ puppetserver ca list
 puppetserver ca sign --certname puppet-agent.novalocal
 ```
 
+## install new node 
+```shell
+# on server 
+echo "127.0.0.2 puppet" >> /etc/hosts
+yum -y install puppetserver
+/opt/puppetlabs/bin/puppet --version
+puppetserver --version
+which puppet
+systemctl start puppetserver
+systemctl enable puppetserver
+# on node 
+yum list puppet*
+yum install -y puppet
+vi /etc/hosts
+puppet agent -t
+find / -name puppet -print 2>/dev/null
+/opt/puppetlabs/bin/puppet agent -t
+# on puppetmaster
+puppetserver ca list
+puppetserver ca sign --certname puppetagent-std1.novalocal
+# on node 
+vi ~/.bash_profile
+source ~/.bash_profile
+puppet --version
+systemctl start puppet
+systemctl enable puppet
+```
+
 
 
