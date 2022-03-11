@@ -1,6 +1,6 @@
-$dir_path = '/var/lib/pgsql/data'
+$dir_path = '/var/lib/pgsql/data/pg_hba.conf'
 exec { 'module_postgresql':
-  command => '/bin/dnf module enable postgresql:13',
+  command => '/bin/dnf -y module enable postgresql:13',
 }
 
 package { 'postgresql-server':
